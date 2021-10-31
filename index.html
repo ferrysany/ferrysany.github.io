@@ -63,7 +63,7 @@ function divis(num,d){
     if (ddiv==true){dtext = 'is '} else (dtext = 'is not ');
 
     var str;
-    str = num + ' is ' + evenOdd +' and ' + dtext + 'divisible by wo ' + d;
+    str = num + ' is ' + evenOdd +' and ' + dtext + 'divisible by two ' + d;
     
     return(str);
 };
@@ -73,7 +73,7 @@ function calc(){
     t.innerHTML = divis(document.getElementById('num').value, 3);
 };
 
-function reverse(){
+function reverse1(){
 	var rtext = document.getElementById("text1");
 	const myArr = rtext.split("");
 	text = "";
@@ -81,6 +81,12 @@ function reverse(){
 		text += myArr[i]
 		};
 	<!-- var text = "hello"; -->
+	var r = document.getElementById("target2");
+	r.innerHTML = rtext;
+};	
+
+function reverse(){
+	var rtext = document.getElementById("text1");
 	var r = document.getElementById("target2");
 	r.innerHTML = rtext;
 };	
