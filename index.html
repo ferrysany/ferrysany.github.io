@@ -72,14 +72,31 @@ function calc(){
     var t = document.getElementById("target");
     t.innerHTML = divis(document.getElementById('num').value, 3);
 }
+
+function reverse(){
+	var rtext = document
 </script>
 <p>
 <form>
     <input id="num" type="number" size="4">
     <input type="button" value="check" onClick="calc();">
 	<input id="text1" type="string" size="30">
+	<input type="button" value="check" onClick="reverse();">
 </form>
 </p>
+
+<p id="demo"></p>
+
+<script>
+let text = document.getElementById('text1');
+const myArr = text.split("");
+
+text = "";
+for (let i = (myArr.length-1); i>=0; i--) {
+  text += myArr[i]
+}
+document.getElementById("demo").innerHTML = text;
+</script>
 
 <div id="target"></div>
 
