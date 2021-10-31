@@ -74,15 +74,15 @@ function calc(){
 };
 
 function reverse(){
-	var rtext = document.getElementById('text1');
+	var rtext = document.getElementById("text1");
 	const myArr = rtext.split("");
 	text = "";
 	for (let i = (myArr.length-1); i>=0; i--) {
 		text += myArr[i]
 		};
 	
-	var r = documentgetElementById("target2");
-	r.innerHTML = text
+	var r = document.getElementById("target2");
+	r.innerHTML = text;
 };	
 </script>
 <p>
@@ -94,11 +94,11 @@ function reverse(){
 </form>
 </p>
 
-<p id="demo"></p>
-
 <div id="target"></div>
 
 <div id="target2"></div>
+
+<p id="demo"></p>
 
 <script type="text/javascript" src="other_script.js"></script>
 
