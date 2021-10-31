@@ -73,7 +73,7 @@ function calc(){
     t.innerHTML = divis(document.getElementById('num').value, 3);
 };
 
-function reverse(){
+function reverse1(){
 	var rtext = document.getElementById("text1");
 	const myArr = rtext.split("");
 	text = "";
@@ -81,6 +81,12 @@ function reverse(){
 		text += myArr[i]
 		};
 	text = "hello"
+	var r = document.getElementById("target2");
+	r.innerHTML = text;
+};	
+
+function reverse(){
+	var text = "hello";
 	var r = document.getElementById("target2");
 	r.innerHTML = text;
 };	
