@@ -86,14 +86,18 @@ function reverse(){
 
 function twenty_multi(){
 	var n = document.getElementById("num").value;
-	document.write("<table>")
+	var table1="";
+	table1 += "<table>"
 	for (var i = 0; i<=4; i++){
-		document.write("<tr>")
+		table1 += "<tr>"
 		for (var j = 1; j<=4; j++){
-			document.write("<td>" + (4*i+j)*n + "</td>")
+			table1 += "<td>" + (4*i+j)*n + "</td>";
 			}
-		document.write("</tr>")}
-	document.write("</table>")
+		table1 += "</tr>"; 
+		}
+	table1 += "</table>";
+	var t = document.getElementById("t1");
+	t.innerHTML = table1;
 };
 
 </script>
@@ -110,6 +114,8 @@ function twenty_multi(){
 <div id="target"></div>
 
 <div id="target2"></div>
+
+<div id="t1"></div>
 
 <script type="text/javascript" src="other_script.js"></script>
 
