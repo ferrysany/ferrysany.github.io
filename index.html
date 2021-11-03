@@ -125,11 +125,11 @@ function twenty_multi(){
 
 var data;
 
-d3.csv("presidents.csv", function(data) {
-    console.log(data);
+d3.csv("/presidents.csv", function(data) {
+	document.write(data);
 });
 
-document.write(data);
+<!-- console.log(data); -->
 
 </script>
 
