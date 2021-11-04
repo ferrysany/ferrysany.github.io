@@ -6,36 +6,15 @@
 
 <body>
 
-<h1>CUNY 608 Module 5</h1>
-<h2>By Chun San Yip</h2>
+<h1>CUNY 608 Module 5 Fall 2021</h1>
+<h3>By Chun San Yip</h3>
 
 
 <script type="text/javascript">
 
-document.write('<br><p>Is a number even or odd, is it divisible by 3?')
+document.write('<br><p>Please input text and it will be reversed')
 
 // Basic functions
-
-function divis(num,d){
-    var evenOdd = 'odd';
-    if (num%2 == 0) {evenOdd = 'even';};
-
-    var ddiv = false;
-    if (num%d == 0) {ddiv = true;};
-
-    var dtext; 
-    if (ddiv==true){dtext = 'is '} else (dtext = 'is not ');
-
-    var str;
-    str = num + ' is ' + evenOdd +' and ' + dtext + 'divisible by two ' + d;
-    
-    return(str);
-};
-
-function calc(){
-    var t = document.getElementById("target");
-    t.innerHTML = divis(document.getElementById('num').value, 3);
-};
 
 function reverse(){
 	var rtext = document.getElementById("text1").value;
@@ -67,11 +46,15 @@ function twenty_multi(){
 </script>
 <p>
 <form>
+	<div>
 	<input id="text1" type="text" size="30">
-	<input type="button" value="reverse" onClick="reverse();"> 
+	<input type="button" value="Reverse" onClick="reverse();"> 
+	</div>
+	
+	<div>
 	<input id="num" type="number" size="4">
-    <input type="button" value="check" onClick="calc();">
 	<input type="button" value="twenty_multiple" onClick="twenty_multi();">
+	</div>
 </form>
 </p>
 
